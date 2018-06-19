@@ -1,0 +1,7 @@
+{
+  "name": "shop",
+  "short_name": "shop",
+  "description": "Tienda basado en la demo de polymer",
+  "start_url": "/",
+  "display": "standalone"
+}
