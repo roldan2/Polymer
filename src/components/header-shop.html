@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="header-shop">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Header [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class HeaderApp extends Polymer.Element {
+      static get is() { return 'header-shop'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'header-shop'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(HeaderApp.is, HeaderApp);
+  </script>
+</dom-module>
